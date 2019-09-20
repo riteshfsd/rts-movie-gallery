@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import MoviesList from './components/moviesList/moviesList';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          Movies-Gallery
+          <MoviesList />
       </header>
     </div>
   );
