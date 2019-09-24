@@ -1,1 +1,0 @@
-export const MOVIE_DISPLAY = 'MOVIE_DISPLAY';

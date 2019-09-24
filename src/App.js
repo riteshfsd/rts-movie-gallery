@@ -1,15 +1,20 @@
-import React from 'react';
 import MoviesList from './components/moviesList/moviesList';
+import React, { Component, Fragment } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import MovieListContainer from './containers/movieList/movieListContainer';
+import MovieDetailsContainer from '../src/containers/movieDetails/movieDetailsContainer';
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <MoviesList />
-      </header>
-    </div>
+    <Fragment>
+      <Switch>
+        <Route exact path="/" component={MovieListContainer} />
+        <Route exact path="/details" component={MovieDetailsContainer} />
+
+      </Switch>
+    </Fragment>
   );
 }
 
