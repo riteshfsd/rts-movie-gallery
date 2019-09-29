@@ -12,15 +12,15 @@ class MoviesList extends Component {
     const data = this.props.movieList || [];
     let imageArray = [];
     data.forEach(element => {
-      imageArray.push(<li className="listStyle"><img className="imageStyle" src={element.image} alt="test" /><div>{element.name}</div> </li>);
+      imageArray.push(<li className="grid-contents"><img className="image-style" src={element.image} alt="movies" /><div>{element.name}</div> </li>);
     });
     return (
       <div>
-    <header className="App-header">Movies-Gallery-DeMo
+      <header className="App-header">Movies-Gallery     </header>
+
       <ul className="mainlist">
         {imageArray}
       </ul>
-    </header>
   </div>
     );
   }
