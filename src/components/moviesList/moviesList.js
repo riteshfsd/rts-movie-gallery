@@ -75,7 +75,7 @@ class MoviesList extends Component {
     const data = this.state.movieList || [];
     let imageArray = [];
     data.forEach(element => {
-      imageArray.push(<li key={element.image} className="grid-contents"><img className="image-style" src={element.image} alt="movies" /><div>{element.name}</div> </li>);
+      imageArray.push(<li key={element.image} className="grid-contents"><img className="image-style" src={element.image} alt="movies" /><div className="movie-name-title">{element.name}</div> </li>);
     });
     return (
       <div>

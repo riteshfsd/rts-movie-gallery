@@ -7,17 +7,18 @@
 }
 
 .grid-contents {
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 13rem;
   margin: 0.5rem;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
+  cursor: pointer;
 }
 
 .image-style {
-  width: 160px;
-  height: 160px;
+  width: 208px;
+  height: 208px;
 }
 
 .App-header {
@@ -66,4 +67,7 @@
   background: white;
   font-size: 15px;
   cursor: pointer;
+}
+.movie-name-title{
+  padding: 5px;
 }
