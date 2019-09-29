@@ -1,11 +1,11 @@
-import React, {Component, useEffect} from 'react';
+import React, { Component, useEffect } from 'react';
 import './moviesList.css';
 import image1 from '../../assets/img-1.jpg';
 import { connect } from 'react-redux';
-import { loadMovieList } from '../../actions/action';
+// import { loadMovieList } from '../../actions/action';
 
 class MoviesList extends Component {
-  componentDidMount () {
+  componentDidMount() {
     this.props.getImageList();
   }
   render() {
@@ -16,12 +16,12 @@ class MoviesList extends Component {
     });
     return (
       <div>
-    <header className="App-header">Movies-Gallery-DeMo
-      <ul className="mainlist">
-        {imageArray}
-      </ul>
-    </header>
-  </div>
+        <header className="App-header">Movies-Gallery-DeMo
+        <ul className="mainlist">
+            {imageArray}
+          </ul>
+        </header>
+      </div>
     );
   }
 }
