@@ -2,7 +2,7 @@ import React, {Component, useEffect} from 'react';
 import './moviesList.css';
 import image1 from '../../assets/img-1.jpg';
 import { connect } from 'react-redux';
-import { loadMovieList } from '../../actions/action';
+//import { loadMovieList } from '../../actions/action';
 
 class MoviesList extends Component {
   componentDidMount () {
