@@ -33,7 +33,6 @@ class MoviesList extends Component {
       byYear: '',
     };
   }
-
   componentDidMount() {
     this.props.getImageList();
   }
@@ -70,12 +69,16 @@ class MoviesList extends Component {
     });
 
   }
+  seeMovieDetails = item => {
 
+    console.log("See Movie details Page ++++++");
+    this.props.history.push('/details', item);
+  }
   render() {
     const data = this.state.movieList || [];
     let imageArray = [];
     data.forEach(element => {
-      imageArray.push(<li key={element.image} className="grid-contents"><img className="image-style" src={element.image} alt="movies" /><div className="movie-name-title">{element.name}</div> </li>);
+      imageArray.push(<li key={element.image} className="grid-contents" onClick={() => this.seeMovieDetails(element)}><img className="image-style" src={element.image} alt="movies" /><div className="movie-name-title">{element.name}</div> </li>);
     });
     return (
       <div>
