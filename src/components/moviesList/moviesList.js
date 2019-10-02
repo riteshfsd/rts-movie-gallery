@@ -88,10 +88,10 @@ class MoviesList extends Component {
               <label>Movies List</label>
             </div>
             <div className = "headerSectionContents">
-              <input type="text" className="SearchBoxSection" value={this.state.byName} onChange={this.searchByName('byName')} placeholder = "Search By Genre"></input>
+              <input type="text" className="SearchBoxSection" value={this.state.byName} onChange={this.searchByName('byName')} placeholder = "Search By Genre like Action, Animation, etc"></input>
             </div>
             <div className = "headerSectionContents">
-              <input type="text" className="SearchBoxSection" value={this.state.byYear} onChange={this.searchByName('byYear')} placeholder = "Search By Year"></input>
+              <input type="text" className="SearchBoxSection" value={this.state.byYear} onChange={this.searchByName('byYear')} placeholder = "Search By Year like 2016, 2003, 2018, etc"></input>
             </div>
             <div className = "headerSectionContents">
               <button onClick={this.reset} className="clear-search-btn"> Clear Search</button>
