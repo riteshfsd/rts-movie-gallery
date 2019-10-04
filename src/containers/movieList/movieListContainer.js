@@ -5,8 +5,6 @@ import { getImageList } from '../../redux/movieList/actions';
 import MoviesList from '../../components/moviesList/moviesList';
 
 const mapStateToProps = state => ({
-  // fetching: state.loginReducer.fetching,
-  // error: state.loginReducer.error,
   movieList: state.movieListReducer.movieList
 });
 

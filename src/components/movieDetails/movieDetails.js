@@ -1,9 +1,6 @@
 import React, { Component, useEffect } from 'react';
 import './movieDetails.css';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-//import image1 from '../../assets/img-1.jpg';
-// import { connect } from 'react-redux';
-// import { loadMovieList } from '../../actions/action';
 
 class MovieDetails extends Component {
   componentDidMount() {

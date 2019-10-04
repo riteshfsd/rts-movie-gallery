@@ -6,7 +6,6 @@ import SearchIcon from '@material-ui/icons/Search';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 
-//import { loadMovieList } from '../../actions/action';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
