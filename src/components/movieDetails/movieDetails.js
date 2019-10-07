@@ -1,11 +1,10 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import './movieDetails.css';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 class MovieDetails extends Component {
   componentDidMount() {
     // this.props.getImageList();
-
   }
   goBack = prop => {
     console.log("See Movie details Page ++++++");

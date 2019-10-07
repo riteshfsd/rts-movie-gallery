@@ -1,26 +1,6 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import './moviesList.css';
-import image1 from '../../assets/img-1.jpg';
-import { connect } from 'react-redux';
-import SearchIcon from '@material-ui/icons/Search';
-import { fade, makeStyles } from '@material-ui/core/styles';
-import InputBase from '@material-ui/core/InputBase';
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
-  },
-}));
+import { makeStyles } from '@material-ui/core/styles';
 
 class MoviesList extends Component {
   constructor(props) {

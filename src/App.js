@@ -1,5 +1,4 @@
-import MoviesList from './components/moviesList/moviesList';
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import MovieListContainer from './containers/movieList/movieListContainer';
 import MovieDetailsContainer from '../src/containers/movieDetails/movieDetailsContainer';
